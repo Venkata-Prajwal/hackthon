@@ -1,5 +1,6 @@
 body{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZcIAt1BUXsptkPMpugXSNJMmzJTpqK_zpbQ&usqp=CAU');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZcIAt1BUXsptkPMpugXSNJMmzJTpqK_zpbQ&usqp=CAU'); */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmM1hkoDWA5kn3bbAG_6yrMiBkzr5TifNIg&usqp=CAU');
     background-size: cover;
     background-attachment: fixed;
 }

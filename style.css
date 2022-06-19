@@ -44,7 +44,7 @@ body{
 .start{
     border-radius: 20px;
     font-size: 55px;
-    background:linear-gradient(to right, #02e9fa, #027afa);
+    background:linear-gradient(to right, #86fa02, #050505);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

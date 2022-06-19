@@ -1,20 +1,72 @@
-
 body{
-    background-color: antiquewhite;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZcIAt1BUXsptkPMpugXSNJMmzJTpqK_zpbQ&usqp=CAU');
+    background-size: cover;
+    background-attachment: fixed;
 }
 .welcome_page {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    background:linear-gradient(to right, #f0e330, #1bdcfa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    border-radius: 30px;
-    padding: 10px;
-    min-width: 600px;
-    font-family: 'Roboto', sans-serif;
-    max-width: 550px;
-    /* max-height:200px; */
-    margin: auto;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 140px;
 }
-
+.start_button{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top: 5px;
+}
+.button_des{
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    gap:180px;
+    margin-top: 15px;
+}
+.previous{
+    border-radius: 20px;
+    font-size: 55px;
+    background:linear-gradient(to right, #02e9fa, #027afa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;   
+}
+.previous:hover{
+    cursor:pointer;
+}
+.start{
+    border-radius: 20px;
+    font-size: 55px;
+    background:linear-gradient(to right, #02e9fa, #027afa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: -5%;
+    font-size: 70px;
+}
+.start:hover{
+    cursor:pointer;
+}
+.next{
+    border-radius: 20px;
+    font-size: 55px;
+    background:linear-gradient(to right, #02e9fa, #027afa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.next:hover{
+    cursor:pointer;
+}
 
 .container {
     display: flex;

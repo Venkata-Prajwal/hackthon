@@ -9,43 +9,57 @@ function createCard(pokemon, ability, move, weight, pokeID) {
                     <p class="pokemon_moves"><b>Move : </b>${move}</p>
                     <p class="pokemon_weight"><b>Weight : </b>${weight}</p>
                 </div>
-    </div>   `
+    </div> `
 }
-function clearcontent(){
-    document.querySelector(".container").innerHTML="";
+function buttonDeatils() {
+    console.log('button');
+    const buttonDes = document.querySelector(".container");
+    buttonDes.innerHTML += `
+    <div class="button_des">
+            <button class="previous" onclick="previousPage()">Previous</button>
+            <button class="next" onclick="nextPage()"> Next </button>
+    </div>  `
+
 }
-var k=0;
-function fromStart(){
+function clearcontent() {
+    document.querySelector(".container").innerHTML = "";
+    document.querySelector(".welcome_page").innerHTML = "";
+    document.querySelector(".start_button").innerHTML = "";
+}
+var k = 0;
+function fromStart() {
     clearcontent();
-    k=0;
+    k = 0;
     getCardDeatils(k);
 }
-function nextPage(){
+function nextPage() {
     clearcontent();
     k++;
+    if(k>50){
+        k=0;
+    }
     getCardDeatils(k);
     console.log(k);
 }
 
-function previousPage(){
+function previousPage() {
     clearcontent();
-    if(k<=0){
-    getCardDeatils(0);
-    console.log(0);
+    if (k<=0) {
+        k=50;
+        getCardDeatils(k);
+        console.log(k);
     }
-    else{
-        getCardDeatils(k--);
-        console.log(k);   
+    else {
+        k--;
+        getCardDeatils(k);
+        console.log(k);
     }
 }
 async function getCardDeatils(p) {
-    if(p>=5){
-        fromStart();
-    }
     var ability_names = "";
     var move_name = "";
     for (let i = 1; i <= 10; i++) {
-        const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${(p*10)+i}/`);
+        const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${(p * 10) + i}/`);
         const pokemon = await data.json();
         for (let j = 0; j < pokemon.abilities.length; j++) {
             ability_names += `${pokemon.abilities[j].ability.name}` + " ";
@@ -57,5 +71,6 @@ async function getCardDeatils(p) {
         ability_names = "";
         move_name = "";
     }
+    buttonDeatils();
 }
 getCardDeatils();

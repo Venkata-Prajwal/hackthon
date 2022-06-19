@@ -1,6 +1,6 @@
 body{
     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZcIAt1BUXsptkPMpugXSNJMmzJTpqK_zpbQ&usqp=CAU'); */
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmM1hkoDWA5kn3bbAG_6yrMiBkzr5TifNIg&usqp=CAU');
+    background-image: url('https://pokewalls.files.wordpress.com/2020/05/873frosmoth1920x1080.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -77,8 +77,8 @@ body{
 }
 
 .pokemon_conatiner {
-    background-image: radial-gradient(#ff8a00, #e52e71);
-    background-image: radial-gradient(circle at top right, #ff8a00, red, #e52e71);
+    background-image: radial-gradient(#f0e330, #1bdcfa);
+    background-image: radial-gradient(circle at top right, #f0e330, #1bdcfa);
 
     display: flex;
     flex-direction: row;

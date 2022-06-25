@@ -45,7 +45,7 @@ function nextPage() {
 function previousPage() {
     clearcontent();
     if (k<=0) {
-        k=50;
+        k=5;
         getCardDeatils(k);
         console.log(k);
     }
